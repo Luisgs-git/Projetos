@@ -1,14 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Site em repositório</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ODS 13 - Ação Contra a Mudança Global do Clima</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      background: url('https://litoral-verde.s3.sa-east-1.amazonaws.com/wp-content/uploads/2023/02/13133437/Manaus-florestas.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6); /* camada escura sobre a imagem */
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #4ade80; /* verde claro */
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #4ade80;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #22c55e;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Projeto</h1>
-    <hr>
-    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem necessitatibus similique, reiciendis facere sapiente molestias molestiae tempore commodi esse eum culpa cupiditate dolorum quia modi? Quo at blanditiis similique aspernatur?</p>
+  <div class="overlay">
+    <h1>ODS 13 - Ação Contra a Mudança Global do Clima</h1>
+    <p>
+      A ODS 13 busca tomar medidas urgentes para combater a mudança climática e seus impactos.
+      Isso inclui reduzir emissões de gases de efeito estufa, promover energias renováveis
+      e aumentar a conscientização sobre os riscos ambientais.
+    </p>
+    <button onclick="alert('Você pode fazer a diferença! 🌱')">Saiba mais</button>
+    <footer>
+      Imagem: Floresta Amazônica 🌍
+    </footer>
+  </div>
 </body>
 </html>

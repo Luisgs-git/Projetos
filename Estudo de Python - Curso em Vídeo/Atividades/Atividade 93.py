@@ -1,7 +1,7 @@
 soma=0
 dados={}
 jogo=[]
-dados["Nome"]= str(input("DIgite nome do Jogador: "))
+dados["Nome"]= str(input("Digite nome do Jogador: "))
 partidas=int(input(f"Quantas partidas {dados["Nome"]} jogou?"))
 for i in range (partidas):
     gol=(int(input(f"Quantos gols na partida {i}:")))

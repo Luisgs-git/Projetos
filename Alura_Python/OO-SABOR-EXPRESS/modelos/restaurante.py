@@ -4,12 +4,12 @@
 from modelos.notas import Avaliacao
 
 class Restaurante:
-    restaurantes = []
+    restaurantes = []#Armazenagem de restaurantes criados
     def __init__(self, nome, categoria):
         self._nome = nome.title()
         self._categoria = categoria.upper()
         self._ativo = False
-        self._avaliacao = []
+        self._avaliacao = [] #lista de avaliações.
         Restaurante.restaurantes.append(self)
     
     def __str__(self):
@@ -37,7 +37,7 @@ class Restaurante:
     @property
     def media_avaliacoes(self):
         if not self._avaliacao:
-            return 0
+            return '-'
         soma_das_notas = sum(avaliacao._nota for avaliacao in self._avaliacao)
         quantidade_de_notas=len(self._avaliacao)
         media=round(soma_das_notas/quantidade_de_notas,1)
